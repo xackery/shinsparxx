@@ -18,11 +18,20 @@ jobs:
       # Create a ZIP file containing all files in the root directory
       - name: Create ZIP file
         run: |
-          zip -r shinsparxxx.zip . -x ".git/*"
+          zip -r shinsparxx.zip . -x ".git/*"
 
       # Upload the ZIP file as an artifact
       - name: Upload ZIP file
         uses: actions/upload-artifact@v3
         with:
-          name: shinsparxxx
-          path: shinsparxxx.zip
+          name: shinsparxx
+          path: shinsparxx.zip
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        if: github.ref == 'refs/heads/main'
+        with:
+          repo_token: "${{secrets.GITHUB_TOKEN}}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "ShinSparxx UI"
+          files: |
+            shinsparxx.zip
