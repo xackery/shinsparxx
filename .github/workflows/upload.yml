@@ -19,7 +19,7 @@ jobs:
       - name: Create ZIP file
         run: |
           mkdir shinsparxx
-          cp -r * shinsparxx
+          cp -r * shinsparxx/
           zip -r shinsparxx.zip shinsparxx
 
       # Upload the ZIP file as an artifact
