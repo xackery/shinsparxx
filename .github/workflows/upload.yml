@@ -18,9 +18,9 @@ jobs:
       # Create a ZIP file containing all files in the root directory
       - name: Create ZIP file
         run: |
-          mkdir shinsparxx
-          cp -r * shinsparxx/
-          zip -r shinsparxx.zip shinsparxx
+          mkdir -p /tmp && cd /tmp && mkdir shinsparxx
+          cp -r * /tmp/shinsparxx
+          zip -r shinsparxx.zip /tmp/shinsparxx
 
       # Upload the ZIP file as an artifact
       - name: Upload ZIP file
