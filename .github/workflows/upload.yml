@@ -22,7 +22,7 @@ jobs:
           cp -r * /tmp/shinsparxx
           cd /tmp
           zip -r shinsparxx.zip shinsparxx
-          mv shinsparxx.zip $GITHUB_WORKSPACE/shinsparxx.zip
+          mv shinsparxx.zip $GITHUB_WORKSPACE/shinsparxx.zip -x *.png
 
       # Upload the ZIP file as an artifact
       - name: Upload ZIP file
