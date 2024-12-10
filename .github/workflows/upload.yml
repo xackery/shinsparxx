@@ -7,9 +7,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_go:
-    runs-on: windows-latest
-    steps:
      
   zip_files:
     runs-on: ubuntu-latest
