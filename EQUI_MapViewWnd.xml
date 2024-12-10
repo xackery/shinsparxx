@@ -197,7 +197,7 @@
   </Button>
   <Screen item="MVW_MapCurrentZoneScreen">
     <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
+    <AutoStretch>false</AutoStretch>
     <TopAnchorOffset>220</TopAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
     <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -876,12 +876,6 @@
     <Style_VScroll>false</Style_VScroll>
     <Style_HScroll>false</Style_HScroll>
     <Style_Transparent>true</Style_Transparent>
-    <Pieces>MVW_PanLeftButton</Pieces>
-    <Pieces>MVW_PanRightButton</Pieces>
-    <Pieces>MVW_PanUpButton</Pieces>
-    <Pieces>MVW_PanDownButton</Pieces>
-    <Pieces>MVW_ZoomInButton</Pieces>
-    <Pieces>MVW_ZoomOutButton</Pieces>
     <Pieces>MVW_ToolbarButton</Pieces>
     <Pieces>MVW_MinZLabel</Pieces>
     <Pieces>MVW_MaxZLabel</Pieces>
