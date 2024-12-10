@@ -1,6 +1,6 @@
 module github.com/xackery/shinsparxx
 
-go 1.21.4
+go 1.22
 
 require github.com/xackery/wlk v0.0.14
 
