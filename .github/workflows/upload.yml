@@ -18,11 +18,13 @@ jobs:
       # Create a ZIP file containing all files in the root directory
       - name: Create ZIP file
         run: |
+          make prep
           mkdir -p /tmp/shinsparxx
-          cp -r * /tmp/shinsparxx
+          go build
+          rsync -a --exclude={'*.png','*.ico','*.ini','*.manifest','.gitignore','*.bat','*.syso','*.md','Makefile'} . /tmp/shinsparxx
           cd /tmp
           zip -r shinsparxx.zip shinsparxx
-          mv shinsparxx.zip $GITHUB_WORKSPACE/shinsparxx.zip -x *.png
+          mv shinsparxx.zip $GITHUB_WORKSPACE/shinsparxx.zip
 
       # Upload the ZIP file as an artifact
       - name: Upload ZIP file
