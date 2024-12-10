@@ -34,7 +34,7 @@ jobs:
         run: |
           make prep
           mkdir -p /tmp/shinsparxx
-          rsync -a --exclude={'*.png','*.ico','*.ini','*.manifest','.gitignore','*.bat','*.syso','*.md','Makefile', '*.git', '*.github', 'config', } . /tmp/shinsparxx
+          rsync -a --exclude={'*.png','*.ico','*.ini','*.manifest','.gitignore','*.bat','*.syso','*.md','Makefile', '*.git', '*.github', 'config'} . /tmp/shinsparxx
           cd /tmp
           zip -r shinsparxx.zip shinsparxx
           mv shinsparxx.zip $GITHUB_WORKSPACE/shinsparxx.zip
