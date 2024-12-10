@@ -22,7 +22,7 @@ var (
 
 const (
 	wndPlayerExpPath     = "player/exp/EQUI_PlayerWindow.xml"
-	wndPlayerAAExpPath   = "player/aaexp/EQUI_PlayerWindow.xml"
+	wndPlayerAAExpPath   = "player/aa/EQUI_PlayerWindow.xml"
 	wndPlayerDefaultPath = "player/EQUI_PlayerWindow.xml"
 )
 
