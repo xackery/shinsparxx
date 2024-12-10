@@ -16,7 +16,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
-          go-version: 1.16
+          go-version: 1.21
 
       - name: Build
         run: go build
@@ -34,7 +34,7 @@ jobs:
         run: |
           make prep
           mkdir -p /tmp/shinsparxx
-          rsync -a --exclude={'*.png','*.ico','*.ini','*.manifest','.gitignore','*.bat','*.syso','*.md','Makefile'} . /tmp/shinsparxx
+          rsync -a --exclude={'*.png','*.ico','*.ini','*.manifest','.gitignore','*.bat','*.syso','*.md','Makefile', '*.git', '*.github', 'config', } . /tmp/shinsparxx
           cd /tmp
           zip -r shinsparxx.zip shinsparxx
           mv shinsparxx.zip $GITHUB_WORKSPACE/shinsparxx.zip
