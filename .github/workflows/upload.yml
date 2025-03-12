@@ -21,8 +21,8 @@ jobs:
         with:
           go-version: 1.21
 
-      - name: Build
-        run: go build
+      # name: Build
+      #  run: go build
 
 
       # Create a ZIP file containing all files in the root directory
