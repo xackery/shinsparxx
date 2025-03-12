@@ -581,8 +581,8 @@
     <!--<Font>3</Font>-->
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>2</X>
-      <Y>612</Y>
+      <X>-91</X>
+      <Y>-25</Y>
     </Location>
     <Size>
       <CX>80</CX>
@@ -666,7 +666,7 @@
       <Normal>A_RecessedBox</Normal>
       <NormalDecal>A_GoldCoin</NormalDecal>
     </ButtonDrawTemplate>
-    <!--	
+    <!--
 			<SoundPressed/>
 			<SoundUp/>
 			<SoundFlyby/>
@@ -706,7 +706,7 @@
       <Normal>A_RecessedBox</Normal>
       <NormalDecal>A_SilverCoin</NormalDecal>
     </ButtonDrawTemplate>
-    <!-- 
+    <!--
 			<SoundPressed/>
 			<SoundUp/>
 			<SoundFlyby/>
@@ -746,7 +746,7 @@
       <Normal>A_RecessedBox</Normal>
       <NormalDecal>A_CopperCoin</NormalDecal>
     </ButtonDrawTemplate>
-    <!-- 
+    <!--
 			<SoundPressed/>
 			<SoundUp/>
 			<SoundFlyby/>
@@ -766,8 +766,8 @@
     <!--<Font>3</Font>-->
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>-91</X>
-      <Y>-25</Y>
+      <X>2</X>
+      <Y>612</Y>
     </Location>
     <Size>
       <CX>80</CX>
@@ -835,7 +835,7 @@
       <CX>94</CX>
       <CY>740</CY>
     </Size>
-    <Text> ShinSparxx - Bank</Text>
+    <Text> ShinSpark - Bank</Text>
     <Style_Transparent>false</Style_Transparent>
     <!--<TooltipReference/>-->
     <DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
